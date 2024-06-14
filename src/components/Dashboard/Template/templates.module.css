@@ -1,0 +1,123 @@
+.templates {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.templatesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardContainer {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 17px #d5d5d5, -5px -5px 17px #ebebeb;
+  border-radius: 0.5rem;
+  z-index: 10;
+  width: 12rem;
+  height: 15rem;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+}
+
+.cardContainer:hover {
+  transform: translateY(-0.15rem) translateX(0.15rem);
+  transition: transform 0.3s;
+  box-shadow: 9px 9px 17px #d5d5d5, -9px -9px 17px #ebebeb;
+}
+
+.templateImg {
+  width: 100%;
+  height: 65%;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  z-index: 1;
+  background: #9db2bf;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.templateImg:hover {
+  cursor: pointer;
+}
+
+
+.tempName {
+  font-size: 1rem;
+  /* color: #4891be; */
+  padding: 0.5rem 0rem;
+  margin: 0;
+}
+
+.templateContent {
+  width: 100%;
+  height: 40%;
+  position: relative;
+  border-radius: 0.5rem;
+  border: 1px solid black;
+  z-index: 2;
+  padding: 0.5rem;
+  top: -1rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.templateTags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.templateTags svg {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.button {
+  padding: 0.25rem 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff00;
+  color: #000;
+  border: #447cbf 0.2em solid;
+  border-radius: 11px;
+  transition: all 0.6s ease;
+  gap: 0.25rem;
+}
+
+.buttonSvgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover {
+  background-color: linear-gradient(94.43deg, #447cbf -18.98%, #111111 250%);
+  cursor: pointer;
+}
+
+.button svg {
+  width: 1.6em;
+  position: relative;
+  left: -0.3rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.6s ease;
+}
+
+.button:hover svg {
+  transform: translateX(5px);
+}
+
+.text {
+  font-size: 1rem;
+}

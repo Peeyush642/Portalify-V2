@@ -1,0 +1,23 @@
+.primary-blue-icon-sm-button {
+  border-radius: 0.5rem;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  border: 0px solid #447cbf;
+  cursor: pointer;
+}
+.primary-blue-icon-sm-button:hover svg {
+  scale: 1.1;
+}
+
+.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+.disabled:hover > svg {
+  scale: 1;
+}

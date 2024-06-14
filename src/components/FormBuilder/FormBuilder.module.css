@@ -1,0 +1,360 @@
+.formBuilderContainer {
+  margin: 0.5rem;
+}
+.formBuilderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  /* margin: 0.5rem; */
+  gap: 0.5rem;
+}
+.formBuilderElements {
+  width: 25%;
+  display: flex;
+  user-select: none;
+  padding: 0.5rem;
+  margin: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #ddd;
+
+}
+.elementsContainer{
+  overflow: auto;
+  height: 85vh;
+}
+.formBuilderWorkSpace {
+  width: 50%;
+  display: flex;
+  user-select: none;
+  padding: 0.5rem;
+  margin: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #ddd;
+}
+.workSpaceContainer{
+  height: 85vh;
+  overflow: auto;
+  width: 100%;
+}
+.formBuilderStyling {
+  width: 25%;
+}
+.formBuilderStylingContainer {
+  display: flex;
+  user-select: none;
+  padding: 0.5rem;
+  margin: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  border: 1px solid #ddd;
+  overflow: auto;
+  height: 86.85vh;
+}
+.item {
+  display: flex;
+  user-select: none;
+  padding: 0.5rem;
+  margin: 0;
+  align-items: flex-start;
+  align-content: flex-start;
+  line-height: 1.5;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+.container {
+  background: #fff;
+  border-radius: 3px;
+  flex: 0 0 150px;
+  font-family: sans-serif;
+  border: 1px solid #ddd;
+}
+.notice {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0 0.5rem 0.5rem;
+  border: 1px solid transparent;
+  line-height: 1.5;
+  color: #aaa;
+}
+.previewModal {
+  min-width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.styledButton {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #000;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.styledButtonText {
+  margin: 0 1rem;
+}
+
+.previewModal {
+  transition: all 0.3s ease; /* Transition for all properties with 0.3s duration */
+}
+
+.resizing {
+  pointer-events: none; /* Disable pointer events during resizing */
+}
+
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#globalStyling {
+  overflow: auto !important;
+}
+
+.addButton:hover {
+  border: 1px solid #2d8cf0;
+}
+
+#globalStyling label {
+  text-align: left;
+  width: 30%;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+.previewForm div {
+  overflow: auto !important;
+}
+.custom_col {
+  flex: 0 0 50%;
+}
+
+.htmlContentParent {
+  display: flex;
+  align-items: center;
+}
+
+.bar {
+  list-style: none;
+  margin: -22px 0;
+  padding-left: 1rem;
+}
+.bar > li {
+  position: relative;
+}
+.bar > li:before {
+  content: "\25CF";
+  margin-right: 10px;
+  font-size: 20px;
+  color: #bdbdbd;
+}
+.bar > li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-left: 2px solid #bdbdbd;
+  margin-left: 5px;
+  height: 100%;
+}
+.bar > li:first-of-type:after {
+  top: 50%;
+}
+.bar > li:last-of-type:after {
+  top: -50%;
+}
+.dropable-box {
+  min-height: 50px;
+  border: 1px dashed black;
+  background-color: rgba(255, 255, 255, 0) !important;
+  padding: 0.25rem;
+}
+
+.reorder-handle,
+.cross_icon {
+  display: none;
+}
+.cross_iconDropBox {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  top: -0.9rem;
+  left: 0.9rem;
+}
+
+.cross_iconDropBox img {
+  margin: 0.25rem 0.25rem 0.5rem 0.25rem;
+  cursor: pointer;
+}
+
+/* .dropable-box:hover .cross_iconDropBox {
+  visibility: visible;
+} */
+.reorder-handle {
+  margin: auto;
+}
+.element-box:hover .reorder-handle {
+  display: block;
+}
+.element-box:hover .cross_icon {
+  display: block;
+}
+
+.element-box {
+  /* margin: 0 !important; */
+  padding: 3px !important;
+  /* pointer-events: visible !important; */
+  /* border: none !important; */
+  background-color: rgba(255, 255, 255, 0) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0) !important;
+}
+.element-box:hover {
+  border: 1px solid #ddd !important;
+}
+
+.placeholderText {
+  color: #bdbdbd;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.dropBoxWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0.5rem;
+}
+.multiPageToggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkboxApple {
+  position: relative;
+  width: 50px;
+  height: 25px;
+  margin: 0.25rem 0.5rem 0.25rem 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkboxApple label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+  border-radius: 50px;
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.checkboxApple label:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease;
+}
+
+.checkboxApple input[type="checkbox"]:checked + label {
+  background: #2a6db5;
+}
+
+.checkboxApple input[type="checkbox"]:checked + label:after {
+  transform: translateX(25px);
+}
+
+.checkboxApple label:hover {
+  background: linear-gradient(to bottom, #b3b3b3, #e6e6e6);
+}
+
+.checkboxApple label:hover:after {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.yep {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 25px;
+}
+
+.cards {
+  width: 50%;
+  border-radius: 9px;
+  background: #fff;
+  box-shadow: 6px 6px 23px #cacaca, -6px -6px 23px #f6f6f6;
+  margin: 1rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.cards:hover {
+  scale: 1.01;
+}
+.cross {
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.dropBoxContainer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; */
+}

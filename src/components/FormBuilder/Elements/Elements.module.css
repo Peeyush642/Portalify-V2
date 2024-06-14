@@ -1,0 +1,114 @@
+.elementList {
+  padding: 1.5rem 1rem;
+}
+
+.elementList .element_heading {
+  color: #828282;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.element_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.element_icon img {
+  width: 1rem;
+  height: 1rem;
+}
+.elementList .element_group .element_name {
+  color: #000000;
+  letter-spacing: 0.85px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.element_group {
+  display: flex;
+  min-width: max-content;
+  min-height: max-content;
+  padding: 7px 10px;
+  gap: 10px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  margin: 0.5rem 1rem 0.5rem 0;
+  width: 100%;
+  border: 2px solid transparent;
+}
+.element_group:hover {
+  border: 1px dashed #3d6ba4;
+  scale: 1.01;
+  cursor: grab;
+}
+/* .element_group:active {
+  cursor: grabbing;
+} */
+
+.element_group.disabled_element {
+  pointer-events: none;
+  user-select: none;
+  width: 100%;
+}
+
+.element_group.disabled_element.tooltip {
+  position: relative;
+}
+
+.element_group.disabled_element.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.element_group.disabled_element.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.search-header input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.search-header {
+  margin-bottom: 25px;
+}
+
+.element_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#globalStyling {
+  overflow: auto !important;
+}
+
+#globalStyling label {
+  text-align: left;
+  width: 30%;
+  word-wrap: break-word;
+  margin-right: 10px;
+}
+.previewForm div {
+  overflow: auto !important;
+}
+.custom_col {
+  flex: 0 0 50%;
+}
+
+.htmlContentParent {
+  display: flex;
+  align-items: center;
+}

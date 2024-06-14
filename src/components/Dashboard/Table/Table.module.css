@@ -1,0 +1,327 @@
+.primaryBlueTextGreySmButton {
+  border-radius: 8px;
+  padding: 5px 20px;
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid #447cbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+.bttnContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.editButton {
+  border-radius: 8px;
+  padding: 0.25rem 0.5rem;
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid #447cbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+}
+
+.primaryBlueTextGreySmButton2 {
+  border-radius: 8px;
+  padding: 5px 20px;
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: 600;
+  font-size: 13px;
+  border: 1px solid #447cbf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  width: 6rem;
+}
+
+
+.primary-blue-text-grey-sm-button:hover > img {
+  scale: 1.3;
+}
+
+.primary-blue-text-white-button {
+  border-radius: 8px;
+  padding: 16px 24px;
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  border: 1px solid #447cbf;
+  margin-top: 1rem;
+}
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.noFormDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.dashboard-heading {
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 153.34%;
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 250%);
+  display: inline;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.nameHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.nameHeaderText {
+  position: relative;
+  top: -1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.8rem;
+  height: 1rem;
+}
+.nameHeader input {
+  width: 5rem;
+  padding: 0 0.25rem;
+  height: 1.5rem;
+}
+
+.primaryBlueTextGreySmButton:hover > img {
+  scale: 1.3;
+}
+
+.redText {
+  color: red;
+}
+
+.greenText {
+  color: green;
+}
+
+.disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  background-clip: unset;
+  -webkit-background-clip: unset;
+}
+
+.toggler {
+  width: 72px;
+  margin: 40px auto;
+}
+
+.toggler input {
+  display: none;
+}
+
+.toggler label {
+  display: block;
+  position: relative;
+  width: 60px;
+  height: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 36px;
+  background: #e4e8e8;
+  cursor: pointer;
+}
+
+.toggler label::after {
+  display: block;
+  border-radius: 100%;
+  background-color: #6c6c6c;
+  content: "";
+  animation-name: toggler-size;
+  animation-duration: 0.15s;
+  animation-timing-function: ease-out;
+  animation-direction: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.toggler label::after,
+.toggler label .toggler-on,
+.toggler label .toggler-off {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  width: 26px;
+  height: 26px;
+  transform: translateY(-50%) translateX(-50%);
+  transition: left 0.15s ease-in-out, background-color 0.2s ease-out,
+    width 0.15s ease-in-out, height 0.15s ease-in-out, opacity 0.15s ease-in-out;
+}
+
+.toggler input:checked + label::after,
+.toggler input:checked + label .toggler-on,
+.toggler input:checked + label .toggler-off {
+  left: 75%;
+}
+
+.toggler input:checked + label::after {
+  background-color: #50ac5d;
+  animation-name: toggler-size2;
+}
+
+.toggler .toggler-on,
+.toggler .toggler-off {
+  opacity: 1;
+  z-index: 2;
+}
+
+.toggler input:checked + label .toggler-off,
+.toggler input:not(:checked) + label .toggler-on {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.toggler .path {
+  fill: none;
+  stroke: #fefefe;
+  stroke-width: 7px;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+@keyframes toggler-size {
+  0%,
+  100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@keyframes toggler-size2 {
+  0%,
+  100% {
+    width: 26px;
+    height: 26px;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.embedModal {
+  display: flex;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+
+.embedModal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15% auto;
+  padding: 15px;
+  border-radius: 8px;
+  width: 55%;
+  height: 40%;
+}
+
+.close {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  right: 0.7rem;
+  bottom: 0.2rem;
+  color: #aaa;
+  float: right;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.embedTabs {
+  background-color: #fefefe;
+  position: relative;
+  font-size: 0;
+  box-shadow: 0 0 100px RGBa(0, 0, 0, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.close:hover {
+  color: #000;
+}
+
+.embedCode {
+  display: flex;
+  flex-direction: column;
+}
+
+.copyButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.embedButton{
+  width: 100px;
+}
+
+.embedContent {
+  width: 90%;
+  height: 100%;
+}
+.embedContent p{ 
+  font-size: large;
+  margin-top: 20px;
+}
+.embedContent textarea{ 
+  width: 100%;
+  height: 80px;
+  margin: 15px 0;
+}
+.embedContent button{ 
+  border-color: rgb(97, 97, 247);
+  cursor: pointer;
+}

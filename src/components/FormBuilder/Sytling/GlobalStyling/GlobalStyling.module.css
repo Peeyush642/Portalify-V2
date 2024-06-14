@@ -1,0 +1,50 @@
+.fileUploadForm {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fileUploadLabel input {
+  display: none;
+}
+
+.fileUploadLabel svg {
+  height: 50px;
+  fill: #447cbf;
+  margin-bottom: 20px;
+}
+
+.fileUploadLabel {
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 20px 30px;
+  border-radius: 40px;
+  align-items: center;
+  text-align: center;
+  border: 2px dashed #dcdcdc;
+}
+
+.fileUploadDesign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.fileUploadDesign p {
+  margin: 0;
+}
+
+.browseButton {
+  background-color: #447cbf;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.browseButton:hover {
+  background-color: rgb(14, 14, 14);
+}

@@ -1,0 +1,79 @@
+.leads-page {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  text-align: center;
+}
+
+.grid-container{
+    width: 100%;
+    height: 100%;
+}
+
+.noResponse {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.enlarged-image-modal {
+  position: fixed;
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  z-index: 1000;
+}
+
+.enlarged-image-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.enlarged-image-content img {
+  max-width: 90%;
+  max-height: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.enlarged-image-close {
+  position: absolute;
+  right: -1rem;
+  top: -1rem;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.enlarged-image-close:hover {
+  color: #000;
+}
+
+
+.dashboard-heading {
+  /* font-family: 'Poppins'; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 153.34%;
+  /* identical to box height, or 86px */
+  background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 250%);
+  display: inline;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-family: "Lucida Sans", sans-serif;
+}
+.tableImage{
+  object-fit: cover;
+  border-radius: 10px;
+}

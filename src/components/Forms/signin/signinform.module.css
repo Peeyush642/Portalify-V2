@@ -1,0 +1,182 @@
+/* signin.module.css */
+
+/* Styles for the right-side paragraph */
+.right-side p {
+  color: #447cbf;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* Styles for the signin_card */
+.signin_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 2px 6px 25px rgba(89, 89, 89, 0.08);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 65%;
+}
+
+/* Styles for the setting-card */
+.setting-card {
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 2px 6px 25px rgba(89, 89, 89, 0.08);
+  border-radius: 10px;
+  padding: 3rem;
+  width: 50%;
+}
+
+/* Styles for the hr within the signin_card */
+.signin_card hr {
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+/* Styles for the content after hr in signin_card */
+.signin_card hr::after {
+  background: #fff;
+  content: "OR";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+
+/* Styles for the text within signin_card and setting-card */
+.signin_card .text,
+.setting-card .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #447cbf;
+  text-align: center;
+}
+
+/* Styles for input text within signin_card and setting-card */
+.signin_card .input-text,
+.setting-card .input-text {
+  position: relative;
+  margin-top: 19px;
+  font-weight: 500;
+  color: #595959;
+  font-size: 18px;
+}
+
+/* Styles for input fields within signin_card and setting-card */
+.signin_card .input-text input,
+.setting-card .input-text input {
+  height: 45px;
+  width: 100%;
+  border-radius: 9px;
+  border: 1px solid #e0e3e9;
+  padding: 0 14px;
+  font-size: 16px;
+  color: #0f0c0c;
+  margin: 5px 0;
+  background-color: rgb(237, 236, 236);
+}
+
+/* Styles for the icon within signin_card input */
+.signin_card .input-text i {
+  position: absolute;
+  right: 10px;
+  top: 42px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Styles for buttons within signin_card */
+.signin_card .buttons {
+  margin: 2rem 1rem 0.4rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for button within signin_card */
+.signin_card .buttons button {
+  height: 45px;
+  width: 100%;
+  border: none;
+  background-image: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+  border-radius: 9px;
+  font-size: 1rem;
+  outline: 0;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+/* Styles for the 'forgot' link within signin_card */
+.signin_card .forgot {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2d5380;
+}
+
+/* Styles for the link within 'forgot' */
+.forgot a {
+  text-decoration: none;
+}
+
+/* Styles for the 'Create account' span */
+.createAccountSpan {
+  cursor: pointer;
+  color: #0c6dfd;
+}
+
+/* Styles for 'Create account' */
+.createAccount {
+  color: black;
+  margin: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+
+/* Custom styles (ensure correct class name) */
+.indicatorSeparator {
+  display: none;
+}
+@media  screen and (max-width: 1125px) {
+  .signin_card {
+    width: 75%;
+  }
+  .setting-card {
+    width: 75%;
+  }
+  
+}
+
+@media screen and (max-width: 882px) {
+  .signin_card {
+    width: 60%;
+  }
+  .setting-card {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .signin_card {
+    width: 70%;
+  }
+  .setting-card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .signin_card {
+    width: 80%;
+  }
+  .setting-card {
+    width: 80%;
+  }
+}

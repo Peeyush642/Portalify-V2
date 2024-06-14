@@ -1,0 +1,65 @@
+.embedInput {
+    display: none;
+    &:checked + .embedLabel {
+      background: #eee;
+    }
+    @for $i from 1 through 2 {
+      &#tab#{$i}:checked {
+        ~ .embedLine {
+          left: #{($i - 1) * 25%};
+        }
+        ~ .embed-content-container #c#{$i} {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  
+  .embedLabel {
+    display: inline-block;
+    font-size: 16px;
+    height: 36px;
+    line-height: 36px;
+    width: 25%;
+    text-align: center;
+    background: #f4f4f4;
+    color: #555;
+    position: relative;
+    transition: 0.25s background ease;
+    cursor: pointer;
+    &::after {
+      content: "";
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      display: block;
+      background: #ccc;
+      bottom: 0;
+      opacity: 0;
+      left: 0;
+      transition: 0.25s ease;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+  
+  .embedLine {
+    position: absolute;
+    height: 2px;
+    background: #1e88e5;
+    width: 25%;
+    top: 34px;
+    left: 0;
+    transition: 0.25s ease;
+  }
+  .embed-content-container {
+
+    height: 14rem;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  

@@ -1,0 +1,138 @@
+/* signin.module.css */
+.signin-screen {
+    margin-left: 0;
+    background-color: #fafafa;
+  }
+  
+  .container {
+    margin-left: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: #fafafa;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+ 
+  .left-side {
+    background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%);
+    position: relative;
+    min-height: 100vh;
+    width: 58%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    right: 6rem;
+    bottom: 3rem;
+
+  }
+  .logo img {
+    padding: 20px;
+    max-height: 5.5rem;
+    width: 15rem;
+  }
+  
+  .signin-image-all {
+    position: relative;
+    max-height: 20%;
+ 
+  }
+  
+  .img-fluid {
+    width: 100%;
+    height: auto;
+  }
+  
+  .justify-centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 42%;
+  }
+  
+  
+  @media screen and (max-width: 882px) {
+    .signin-image-all {
+      display: none;
+    }
+  
+    .left-side {
+      height: 10vh;
+      min-height: 10vh;
+        width: 100%;
+    }
+    .right-side {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .imageContainer{
+      display: none;
+    }
+
+  }
+  
+  .signin-image-child1 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    width: 15rem;
+  }
+  
+  .signin-image-child2 {
+    position: absolute;
+    top: 44%;
+    left: 30%;
+    width: 15rem;
+  }
+  
+  .signin-image-child3 {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 15rem;
+  }
+  
+  .signin-image-child1:hover,
+  .signin-image-child2:hover,
+  .signin-image-child3:hover {
+    z-index: 100;
+  }
+  
+  .right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  @media screen and (max-width: 532px) {
+
+    .left-side {
+      height: 8vh;
+      min-height: 8vh;
+        width: 100%;
+    }
+    
+    .logo img {
+      padding: 20px;
+      max-height: 4.5rem;
+      width: 10rem;
+    }
+  }
