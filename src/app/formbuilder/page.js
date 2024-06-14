@@ -1,7 +1,7 @@
 "use client";
-import Navbar from "@/components/Formbuilder/Navbar/navbar";
-import FormBuilder from "@/components/Formbuilder/formBuilder";
-import FormBuilderContext from "@/context/FormBuilderContext";
+import Navbar from "../../components/FormBuilder/Navbar/navbar";
+import FormBuilder from "../../components/Formbuilder/formBuilder";
+import FormBuilderContext from "../../context/FormBuilderContext";
 import { useRouter } from 'next/router';
 export default function Page()  {
   return (
