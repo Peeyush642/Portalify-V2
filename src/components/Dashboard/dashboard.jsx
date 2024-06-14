@@ -8,10 +8,10 @@ import { useRouter } from "next/navigation";
 
 const Dashboard = ({ content }) => {
   const router = useRouter();
-  let isAuthenticated = "";
-  if (typeof window !== "undefined") {
-    isAuthenticated = localStorage.getItem("isAuthenticated") || "";
-  }
+   let isAuthenticated = "";
+    if (typeof window !== "undefined") {
+        isAuthenticated = localStorage.getItem("isAuthenticated");
+    }
   
   useEffect(() => {
     if (!isAuthenticated) {
