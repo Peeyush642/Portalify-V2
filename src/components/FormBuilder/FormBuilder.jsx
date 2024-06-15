@@ -208,16 +208,13 @@ export default function FormBuilder({ formid }) {
         const updatedState = {};
         console.log("formData==>", formData);
         console.log("fdsjkn");
-        // Iterate through the keys of the formData object
+        
         for (const formId in formData) {
           if (state[formId]) {
-            // If it exists, update the children property with the data from the API
             state[formId].children = formData[formId].children;
           } else {
-            // If it doesn't exist, create a new entry in the state
             state[formId] = formData[formId];
           }
-          // Store the updated state in the updatedState object
           updatedState[formId] = state[formId];
         }
 
