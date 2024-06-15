@@ -6,7 +6,7 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
-import classes from "../Formbuilder/FormBuilder.module.css";
+import classes from "../FormBuilder/FormBuilder.module.css";
 
 const FormPreviewModal = ({
   isOpen,

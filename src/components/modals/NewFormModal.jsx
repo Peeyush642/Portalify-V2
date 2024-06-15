@@ -6,7 +6,7 @@ import {
   DialogActions,
   Button,
 } from "@mui/material";
-import classes from "../Formbuilder/FormBuilder.module.css";
+import classes from "../FormBuilder/FormBuilder.module.css";
 import NewForm from "../../assets/NewForm.json";
 import Lottie from "lottie-react";
 import UseTemplate from "../../assets/UseTemplate.json";
