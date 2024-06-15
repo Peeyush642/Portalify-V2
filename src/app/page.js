@@ -1,5 +1,5 @@
 "use client";
-import Dashboard from "@/components/Dashboard/Dashboard";
+import Dashboard from "@/components/Dashboard/dashboard";
 import Table from "@/components/Dashboard/Table/table";
 import { useEffect } from "react";
 

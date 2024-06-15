@@ -1,6 +1,6 @@
 "use client";
 import Navbar from "@/components/FormBuilder/Navbar/navbar";
-import FormBuilder from "@/components/FormBuilder/formBuilder";
+import FormBuilder from "@/components/FormBuilder/FormBuilder";
 import FormBuilderContext from "@/context/FormBuilderContext";
 export default function Page({ params }) {
   const formID = params.formid;

@@ -10,8 +10,9 @@ const Dashboard = ({ content }) => {
   const router = useRouter();
    let isAuthenticated = "";
     if (typeof window !== "undefined") {
-        isAuthenticated = localStorage.getItem("isAuthenticated");
+        isAuthenticated = localStorage.getItem("isAuthenticated") ;
     }
+
   
   useEffect(() => {
     if (!isAuthenticated) {
@@ -29,7 +30,7 @@ const Dashboard = ({ content }) => {
 
           <div className={styles.mainContent}>
             <Navbar />
-            <div className={styles.content}>{content}</div>
+            <div className={styles.content}> {content} </div>
           </div>
         </div>
       </div>

@@ -1,4 +1,4 @@
-import Dashboard from "@/components/Dashboard/Dashboard";
+import Dashboard from "@/components/Dashboard/dashboard";
 import Responses from "@/components/Dashboard/Responses/Response";
 export default function Page({ params }) {
   const formID = params.formid;
