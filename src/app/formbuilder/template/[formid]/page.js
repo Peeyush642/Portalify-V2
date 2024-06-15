@@ -1,5 +1,5 @@
 "use client";
-import Navbar from "@/components/Formbuilder/Navbar/navbar";
+import Navbar from "@/components/FormBuilder/Navbar/navbar";
 import FormBuilder from "@/components/FormBuilder/FormBuilder";
 import FormBuilderContext from "@/context/FormBuilderContext";
 export default function Page({ params }) {
