@@ -72,17 +72,15 @@
 .accountMenu_userName {
   display: none !important;
 }
-.accountMenu{
-position: absolute;
-top: 4.1rem;
-right: 3rem;
-display: "flex";
-justify-content: "center"
-}
+/* .accountMenu {
+  position: absolute;
+  display: "flex";
+  justify-content: "center";
+} */
 .primary-blue-text-grey-sm-button {
   border-radius: 8px;
   margin: 0rem 0.5rem;
-  padding:  5px 10px;
+  padding: 5px 10px;
   /* background: linear-gradient(94.43deg, #447cbf -18.98%, #111111 113.48%); */
   background-clip: text;
   -webkit-background-clip: text;
