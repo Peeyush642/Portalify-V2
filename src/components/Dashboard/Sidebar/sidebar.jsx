@@ -31,7 +31,7 @@ const Sidebar = () => {
       name: "Builder",
       icon: BuilderIcon,
     },
-    isAdmin && {
+    isAdmin=="true" && {
       path: "/templates",
       name: "Templates",
       icon: TemplateIcon,
