@@ -140,11 +140,13 @@ const SignIn = ({ onSignInSuccess, onCreateAccountClick  }) => {
           onSuccess={async (credentialResponse) => {
             try {
               const credentialResponseDecoded = jwtDecode(credentialResponse.credential);
-
+              console.log('Google Sign-In Response:', credentialResponseDecoded);
               const googleSignInFlag = true;
               const email = credentialResponseDecoded.email;
 
               const user = await AuthService.loginWithGoogle({
+                family_name: credentialResponseDecoded.family_name,
+                given_name: credentialResponseDecoded.given_name,
                 googleSignIn: googleSignInFlag,
                 email,
               });
