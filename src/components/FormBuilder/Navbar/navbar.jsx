@@ -86,9 +86,9 @@ const TopBar = () => {
                   mt: 1.5,
                   "&.MuiMenu-paper": {
                     position: "relative",
-                    top: { xs: "4.1rem !important", md: "4rem !important" },
+                    top: { xs: "4.1rem !important", md: "4.6rem !important" },
                     width: { xs: "100%", md: "10rem" },
-                    right: { xs: "1.6rem", md: "1.6rem" },
+                    right: { xs: "1.6rem", md: "3rem" },
                     display: "flex",
                     justifyContent: "center",
                   },
